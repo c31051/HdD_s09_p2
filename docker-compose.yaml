@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  mi-script:
+    image: python:3.11-slim
+    container_name: contenedor-python-clase
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: python s09_e01.py
